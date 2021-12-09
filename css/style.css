@@ -6,6 +6,7 @@
 
 body {
   background: linear-gradient(#2b1055, #7597de);
+  background-size: 100vw 100vh;
   color: #fff;
   font-size: 18px;
   font-family: "Lato", sans-serif;
