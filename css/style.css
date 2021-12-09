@@ -21,20 +21,18 @@ body {
   z-index: -1;
 }
 
-     /*Header*/
+/*Header*/
 .barra-navegacion ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 60%;
-  height: 10vh;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  min-width: 950px; 
-  
+  min-width: 950px;
 }
 .barra-navegacion li {
   list-style: none;
@@ -59,12 +57,11 @@ body {
   color: #2b1055;
   border-radius: 25px;
 }
-       /*Header Responsive*/
+/*Header Responsive*/
 .barra-navegacion-responsive ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 10vh;
 }
 .barra-navegacion-responsive li {
   list-style: none;
@@ -90,21 +87,21 @@ body {
   border-radius: 25px;
 }
 .barra-navegacion-responsive {
-  visibility: hidden;
+  display: none;
 }
 
-     /*Contenido*/
+/*Contenido*/
 .contenido-descripcion {
   width: 60%;
   display: flex;
-  height: 60vh;
   margin: auto;
   justify-content: center;
   flex-wrap: wrap;
   min-width: 250px;
   transition: all 2s;
   text-align: justify;
-  
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .contenido-descripcion .titulo {
   text-transform: uppercase;
@@ -137,16 +134,17 @@ body {
   animation: none;
 }
 
-      /*Footer*/
-footer ul {
+/*Footer*/
+footer {
   width: 60%;
   margin: auto;
+}
+footer ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   list-style: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 footer ul li {
   font-size: 30px;
@@ -170,7 +168,6 @@ footer ul li {
   }
 }
 
-
 /*Queries*/
 @media screen and (max-width: 767px) {
   * {
@@ -179,12 +176,12 @@ footer ul li {
   }
   ::-webkit-scrollbar {
     display: none;
-}
+  }
   .barra-navegacion {
     display: none;
   }
   .barra-navegacion-responsive {
-    visibility: visible;
+    display: block;
     margin: 15px;
   }
   .barra-navegacion-responsive .logo {
@@ -200,7 +197,6 @@ footer ul li {
   .contenido-descripcion {
     margin-top: 30px;
     margin-bottom: 20px;
-    height: 45vh;
   }
   .contenido-descripcion .titulo span:first-child {
     font-size: 20px;
@@ -215,10 +211,8 @@ footer ul li {
     font-size: 14px;
   }
   footer ul {
-    text-align: center;
-    padding: 0px;
-    margin-top: 40px;
-    
-
+      justify-content: stretch;
+      flex-direction: column;
+   
   }
 }
