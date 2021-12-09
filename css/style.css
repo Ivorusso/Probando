@@ -213,6 +213,8 @@ footer ul li {
   footer ul {
     flex-wrap: nowrap;
     margin: auto;
+    display: inline-flex;
+ 
 
     
   }
