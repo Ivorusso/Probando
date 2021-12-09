@@ -55,7 +55,7 @@ particlesJS(
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 2,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -76,7 +76,7 @@ particlesJS(
           "mode": "bubble"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "resize": true
