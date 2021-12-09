@@ -139,7 +139,6 @@ body {
 
       /*Footer*/
 footer ul {
-  /* height: 20vh; */
   width: 60%;
   margin: auto;
   display: flex;
@@ -217,7 +216,9 @@ footer ul li {
   }
   footer ul {
     text-align: center;
-    margin: auto;
+    padding: 0px;
+    margin-top: 40px;
+    
 
   }
 }
